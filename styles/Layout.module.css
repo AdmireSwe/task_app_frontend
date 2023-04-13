@@ -1,56 +1,17 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
   max-width: 100%;
 }
 
 .card {
   padding: 1rem 1.2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  border: 5px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
 }
 
@@ -99,7 +60,7 @@
 .center::after {
   content: '';
   left: 50%;
-  position: absolute;
+  position: relative;
   filter: blur(45px);
   transform: translateZ(0);
 }
@@ -136,10 +97,14 @@
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
+    align-content: center;
   }
 
   .card {
     padding: 1rem 2.5rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 
   .card h2 {
@@ -167,7 +132,7 @@
   .description div {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     width: 100%;
   }
 
@@ -188,7 +153,7 @@
   }
 
   .description div {
-    align-items: flex-end;
+    align-items: center;
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;

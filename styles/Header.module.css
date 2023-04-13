@@ -1,0 +1,125 @@
+.main {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  
+.title {
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    align-items: center;
+    width: 100%;
+}
+.description {
+    text-align: center;
+    font-size: 0.85rem;
+    width: inherit;
+    z-index: 2;
+    margin: 5px;
+    padding: 2px;
+    font-family: var(--font-mono);
+    background-color: rgba(var(--callout-rgb), 0.5);
+    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+    border-radius: var(--border-radius);
+}
+.card {
+    justify-content: space-around;
+    padding: 1rem 1.2rem;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background 200ms, border 200ms;
+  }
+
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    .content {
+      padding: 4rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 120px;
+      max-width: 320px;
+      text-align: center;
+    }
+  
+    .card {
+      padding: 1rem 2.5rem;
+    }
+  
+    .card h2 {
+      margin-bottom: 0.5rem;
+    }
+  
+    .center {
+      padding: 8rem 0 6rem;
+    }
+  
+    .center::before {
+      transform: none;
+      height: 300px;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .description a {
+      padding: 1rem;
+    }
+  
+    .description p,
+    .description div {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+    }
+  
+    .description p {
+      align-items: center;
+      padding: 2rem 1rem 1.4rem;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+      background: linear-gradient(
+        to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5)
+      );
+      background-clip: padding-box;
+      backdrop-filter: blur(24px);
+    }
+  
+    .description div {
+      align-items: center;
+      pointer-events: none;
+      padding: 2rem;
+      height: 200px;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%
+      );
+      z-index: 1;
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
